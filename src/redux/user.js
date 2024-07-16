@@ -19,4 +19,7 @@ export const userSlice = createSlice({
   },
 });
 
+export const { login } = userSlice.actions;
+//login 함수를 action 기능이 작동하도록 다른 데서 쓸 것
+
 export default userSlice.reducer;
