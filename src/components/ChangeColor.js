@@ -13,6 +13,7 @@ function ChangeColor() {
   return (
     <div>
       <input
+        placeholder="색상을 영어로 입력해주세요."
         type="text"
         onChange={(e) => {
           setColor(e.target.value);
