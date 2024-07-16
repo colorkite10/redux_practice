@@ -4,9 +4,11 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "./user";
+import themeReducer from "./theme";
 
 export default configureStore({
   reducer: {
     user: userReducer, //userSlice.reducer로 export했는데 어떻게 이걸로 불러오지?
+    theme: themeReducer,
   }, //상태관리 할 것들을 저장할 공간
 });
